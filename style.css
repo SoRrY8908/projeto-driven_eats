@@ -17,6 +17,7 @@ header{
     top: 0;
     right: 0;
     left: 0;
+    z-index: 1;
 }
 
 .app-name{
@@ -45,6 +46,7 @@ header{
 }
 
 .items{
+    margin-top: 17px;
     display: flex;
     overflow-x: auto;
 }
@@ -59,6 +61,7 @@ footer{
     bottom: 0;
     right: 0;
     left: 0;
+    z-index: 1;
 }
 
 button{
@@ -81,13 +84,56 @@ button{
 
 .item{
     margin-right: 16px;
+    padding: 13px 14px;
+    padding-top: 18px;
     width: 172px;
     height: 216px;
     background-color: white;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
+    justify-content: center;
+    position: relative;
 }
 
 section{
     margin-bottom: 27px;
+}
+
+.item-picture{
+    height: 87px;
+    width: 144px;
+    border-radius: 4px;
+}
+
+.item-name{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 8px;
+}
+
+.ingredients{
+    color: #A6A6A6;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-top: 4px;
+}
+
+.price{
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 5px;
+}
+
+.frame{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 172px;
+    height: 216px;
+}
+
+.hide{
+    display: none;
 }
