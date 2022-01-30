@@ -6,12 +6,16 @@ let food_name = "";
 let beverage_name = "";
 let dessert_name = "";
 
-let food_price = "";
-let beverage_price = "";
-let dessert_price = "";
+let food_price = 0.0;
+let beverage_price = 0.0;
+let dessert_price = 0.0;
+
+let total_price = 0.0;
 
 
 function select_food(element, foodName, foodPrice){
+    food_name = foodName;
+    food_price = foodPrice;
     const food_items = document.querySelectorAll(".food .frame")
     for(let i = 0; i<food_items.length; i++){
         food_items[i].classList.add("hide");
@@ -26,7 +30,9 @@ function select_food(element, foodName, foodPrice){
     }
 }
 
-function select_beverage(element){
+function select_beverage(element, beverageName, beveragePrice){
+    beverage_name = beverageName;
+    beverage_price = beveragePrice;
     const beverage_items = document.querySelectorAll(".beverage .frame")
     for(let i = 0; i<beverage_items.length; i++){
         beverage_items[i].classList.add("hide");
@@ -41,7 +47,9 @@ function select_beverage(element){
     }
 }
 
-function select_dessert(element){
+function select_dessert(element, dessertName, dessertPrice){
+    dessert_name = dessertName;
+    dessert_price = dessertPrice;
     const dessert_items = document.querySelectorAll(".dessert .frame")
     for(let i = 0; i<dessert_items.length; i++){
         dessert_items[i].classList.add("hide");
@@ -58,6 +66,16 @@ function select_dessert(element){
 
 function confirm_items(){
     document.querySelector(".checkout").classList.remove("hide");
+    total_price = food_price + beverage_price + dessert_price;
+    const name = document.querySelectorAll(".names p");
+    name[0].innerHTML = food_name;
+    name[1].innerHTML = beverage_name;
+    name[2].innerHTML = dessert_name;
+    const price = document.querySelectorAll(".prices p");
+    price[0].innerHTML = food_price.toFixed(2);
+    price[1].innerHTML = beverage_price.toFixed(2);
+    price[2].innerHTML = dessert_price.toFixed(2);
+    price[3].innerHTML = "R$ " + total_price.toFixed(2);
 }
 
 
