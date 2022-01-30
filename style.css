@@ -7,6 +7,10 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+.hide{
+    display: none;
+}
+
 header{
     color: white;
     padding: 8px 21px;
@@ -41,6 +45,9 @@ header{
     justify-content: space-between;
 }
 
+section{
+    margin-bottom: 27px;
+}
 .steps{
     font-family: 'Righteous', cursive;
     font-size: 26px;
@@ -51,37 +58,6 @@ header{
     margin-top: 17px;
     display: flex;
     overflow-x: auto;
-}
-
-footer{
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 92px;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    z-index: 1;
-}
-
-button{
-    width: 364px;
-    height: 61px;;
-    border-radius: 50px;
-    color: white;
-    font-size: 20px;
-    font-weight: 700;
-    border: hidden;
-}
-
-.selecting{
-    background-color: #CBCBCB;
-}
-
-.selected{
-    background-color: #32B72F;
 }
 
 .item{
@@ -95,10 +71,6 @@ button{
     border-radius: 9px;
     justify-content: center;
     position: relative;
-}
-
-section{
-    margin-bottom: 27px;
 }
 
 .item-picture{
@@ -134,10 +106,6 @@ section{
     left: 0;
     width: 172px;
     height: 216px;
-}
-
-.hide{
-    display: none;
 }
 
 .checkout{
@@ -197,10 +165,6 @@ section{
     margin-bottom: 13px;
 }
 
-.prices p{
-    margin-bottom: 13px;
-}
-
 .total{
     font-weight: 700;
 }
@@ -209,6 +173,10 @@ section{
     text-align: end;
     font-size: 22px;
     font-weight: 400;
+}
+
+.prices p{
+    margin-bottom: 13px;
 }
 
 .total-price{
@@ -225,4 +193,35 @@ section{
     font-size: 20px;
     font-weight: 700;
     margin-top: 20px;
+}
+
+footer{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 92px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+button{
+    width: 364px;
+    height: 61px;;
+    border-radius: 50px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    border: hidden;
+}
+
+.selecting{
+    background-color: #CBCBCB;
+}
+
+.selected{
+    background-color: #32B72F;
 }

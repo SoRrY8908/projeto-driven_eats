@@ -15,7 +15,6 @@ let total_price = 0.0;
 let username = "";
 let address ="";
 
-
 function select_food(element, foodName, foodPrice){
     food_name = foodName;
     food_price = foodPrice;
