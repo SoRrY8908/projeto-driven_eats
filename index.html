@@ -21,35 +21,35 @@
             <h3 class="steps">Primeiro, seu prato</h3>
             <div class="items">
                 <div class="item" onclick="select_food(this, 'Pizza', 14.90)">
-                    <img class="item-picture" src="media/refrigerante-lata.jpg" alt="">
+                    <img class="item-picture" src="media/pizza.jpeg" alt="">
                     <p class="item-name">Pizza (Individual)</p>
                     <p class="ingredients">Marguerita, Brasileira, Portuguesa</p>
                     <p class="price">R$ 14,90</p>
                     <img  class="frame hide" src="media/selected-frame.png" alt="">
                 </div>
                 <div class="item" onclick="select_food(this, 'Coxinha', 6.90)">
-                    <img class="item-picture" src="media/refrigerante-lata.jpg" alt="">
+                    <img class="item-picture" src="media/coxinha.jpg" alt="">
                     <p class="item-name">Coxinha (Unidade)</p>
                     <p class="ingredients">4 queijos, Jaca, Massa de Mandioca</p>
                     <p class="price">R$ 6,90</p>
                     <img  class="frame hide" src="media/selected-frame.png" alt="">
                 </div>
                 <div class="item" onclick="select_food(this, 'Pamonha', 6.90)">
-                    <img class="item-picture" src="media/refrigerante-lata.jpg" alt="">
+                    <img class="item-picture" src="media/pamonha.jpg" alt="">
                     <p class="item-name">Pamonha (Unidade)</p>
                     <p class="ingredients">Salgado, Doce, Doce com Queijo</p>
                     <p class="price">R$ 6,90</p>
                     <img  class="frame hide" src="media/selected-frame.png" alt="">
                 </div>
                 <div class="item" onclick="select_food(this, 'Ratatouille', 14.90)">
-                    <img class="item-picture" src="media/refrigerante-lata.jpg" alt="">
+                    <img class="item-picture" src="media/ratatouille.jpg" alt="">
                     <p class="item-name">Ratatouille (Ind.)</p>
                     <p class="ingredients">Tomate, Abobrinha e Berinjela</p>
                     <p class="price">R$ 14,90</p>
                     <img  class="frame hide" src="media/selected-frame.png" alt="">
                 </div>
                 <div class="item" onclick="select_food(this, 'Pastel', 6.90)">
-                    <img class="item-picture" src="media/refrigerante-lata.jpg" alt="">
+                    <img class="item-picture" src="media/pastel.jpg" alt="">
                     <p class="item-name">Pastel (Unidade)</p>
                     <p class="ingredients">Queijo, Pizza, Palmito, Chocolate</p>
                     <p class="price">R$ 6,90</p>
@@ -87,21 +87,21 @@
             <h3 class="steps">Por fim, sua sobremesa</h3>
             <div class="items">
                 <div class="item" onclick="select_dessert(this, 'Pudim', 5.90)">
-                    <img class="item-picture" src="media/refrigerante-lata.jpg" alt="">
+                    <img class="item-picture" src="media/pudim.jpg" alt="">
                     <p class="item-name">Pudim (Pedaço)</p>
                     <p class="ingredients">Limão, Chocolate, Original</p>
                     <p class="price">R$ 5,90</p>
                     <img  class="frame hide" src="media/selected-frame.png" alt="">
                 </div>
                 <div class="item" onclick="select_dessert(this, 'Tiramisu', 6.90)">
-                    <img class="item-picture" src="media/refrigerante-lata.jpg" alt="">
+                    <img class="item-picture" src="media/tiramisu.jpg" alt="">
                     <p class="item-name">Tiramisu (Pedaço)</p>
                     <p class="ingredients">Limão, Chocolate, Café</p>
                     <p class="price">R$ 6,90</p>
                     <img  class="frame hide" src="media/selected-frame.png" alt="">
                 </div>
                 <div class="item" onclick="select_dessert(this, 'Mousse', 4.90)">
-                    <img class="item-picture" src="media/refrigerante-lata.jpg" alt="">
+                    <img class="item-picture" src="media/mousse.jpg" alt="">
                     <p class="item-name">Mousse (Individual)</p>
                     <p class="ingredients">Limão, Maracujá, Chocolate</p>
                     <p class="price">R$ 4,90</p>
@@ -115,20 +115,20 @@
             <p class="confirmation">Confirme seu pedido</p>
             <div>
                 <div class="names">
-                    <p class="food-name">a</p>
-                    <p class="beverage-name">a</p>
-                    <p class="dessert-name">a</p>
-                    <p>TOTAL</p>
+                    <p class="food-name"></p>  
+                    <p class="beverage-name"></p>
+                    <p class="dessert-name"></p>
+                    <p class="total">TOTAL</p>
                 </div>
                 <div class="prices">
-                    <p class="food-price">a</p>
-                    <p class="beverage-price">a</p>
-                    <p class="dessert-price">a</p>
-                    <p class="total-price">a</p>
+                    <p class="food-price"></p>
+                    <p class="beverage-price"></p>
+                    <p class="dessert-price"></p>
+                    <p class="total-price"></p>
                 </div>
             </div>
             <button><a href="https://wa.me/5519981356521">Tudo certo, pode pedir!</a></button>
-            <p class="cancel">Cancelar</p>
+            <p class="cancel" onclick="cancel_items()">Cancelar</p>
         </div>
     </div>
     <footer>

@@ -84,5 +84,8 @@ function confirm_items(){
     document.querySelector(".checkout-info button").innerHTML = "<a href=https://wa.me/5519981356521?text=" + msg + ">Tudo certo, pode pedir!</a>";
 }
 
+function cancel_items(){
+    document.querySelector(".checkout").classList.add("hide");
+}
 
 

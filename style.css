@@ -184,4 +184,45 @@ section{
 .checkout-info > div{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.names{
+    text-align: start;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.names p{
+    margin-bottom: 13px;
+}
+
+.prices p{
+    margin-bottom: 13px;
+}
+
+.total{
+    font-weight: 700;
+}
+
+.prices{
+    text-align: end;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.total-price{
+    font-weight: 700;
+}
+
+.confirmation{
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 28px;
+}
+
+.cancel{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
 }
