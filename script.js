@@ -12,6 +12,9 @@ let dessert_price = 0.0;
 
 let total_price = 0.0;
 
+let username = "";
+let address ="";
+
 
 function select_food(element, foodName, foodPrice){
     food_name = foodName;
@@ -82,6 +85,8 @@ function confirm_items(){
     '\n - Sobremesa: ' + dessert_name +
     '\n Total: *R$ ' + total_price.toFixed(2) + '*');
     document.querySelector(".checkout-info button").innerHTML = "<a href=https://wa.me/5519981356521?text=" + msg + ">Tudo certo, pode pedir!</a>";
+    username = prompt("Qual seu nome?");
+    address = prompt("Qual seu endereço?");
 }
 
 function cancel_items(){
