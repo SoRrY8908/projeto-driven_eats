@@ -76,6 +76,12 @@ function confirm_items(){
     price[1].innerHTML = beverage_price.toFixed(2);
     price[2].innerHTML = dessert_price.toFixed(2);
     price[3].innerHTML = "R$ " + total_price.toFixed(2);
+    const msg = encodeURIComponent('Olá, gostaria de fazer o pedido:' + 
+    '\n - Prato: ' + food_name + 
+    '\n - Bebida: ' + beverage_name + 
+    '\n - Sobremesa: ' + dessert_name +
+    '\n Total: *R$ ' + total_price.toFixed(2) + '*');
+    document.querySelector(".checkout-info button").innerHTML = "<a href=https://wa.me/5519981356521?text=" + msg + ">Tudo certo, pode pedir!</a>";
 }
 
 
